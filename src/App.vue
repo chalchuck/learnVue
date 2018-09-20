@@ -28,7 +28,7 @@ body {
 }
 header {
   background-color: #999;
-  width: 1024px;
+  width: 800;
   margin: 0 auto;
 }
 main {

@@ -240,14 +240,12 @@ export default {
   background-color: cornflowerblue;
   /* border-radius: 16px; */
 }
-
 td,
 th {
   text-align: left;
   padding: 5px;
   padding-right: 20px;
 }
-
 .cost {
   text-align: right;
 }
