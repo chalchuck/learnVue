@@ -1,15 +1,20 @@
 <template>
   <div id="app">
-    <!-- <header>
+    <header>
       <nav>
         <ul>
           <li class='nav-item'>
-            <img src="./assets/build-a-bot-logo.png" alt=""/> Build a Bot
+            <img class="logo" src="./assets/build-a-bot-logo.png" alt=""/> Build a Bot
           </li>
         </ul>
       </nav>
-    </header> -->
-   <main> <router-view /> </main>
+    </header>
+    <div class="container">
+      <aside class="aside">
+        <router-view name="sidebar"></router-view>
+      </aside>
+      <main> <router-view /> </main>
+    </div>
   </div>
 </template>
 
@@ -20,11 +25,12 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-}
 body {
   background: linear-gradient(to bottom, #555, #999);
+  background-attachment: fixed;
+}
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
 }
 header {
   background-color: #999;
@@ -32,15 +38,14 @@ header {
   margin: 0 auto;
 }
 main {
-  margin: 0 auto;
   padding: 30px;
   background-color: white;
-  width: 1024px;
+  width: 964px;
   min-height: 300px;
 }
 header {
   background-color: #999;
-  width: 1084px;
+  width: 1184px;
   margin: 0 auto;
 }
 ul {
@@ -56,6 +61,24 @@ ul {
 .logo {
   vertical-align: middle;
   height: 30px;
+}
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+.router-link-active {
+  color: white;
+}
+.container {
+  display: flex;
+  margin: 10px auto 0 auto;
+  justify-content: center;
+}
+.aside {
+  width: 100px;
+  padding: 30px;
+  min-height: 300px;
+  background-color: #aaa;
 }
 </style>
 

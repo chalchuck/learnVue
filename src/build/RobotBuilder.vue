@@ -254,8 +254,8 @@ th {
 }
 .preview {
   position: absolute;
-  top: 30px;
-  right: -30%;
+  top: 90px;
+  right: 135px;
   width: 210px;
   height: 210px;
   padding: 5px;
