@@ -231,13 +231,14 @@ export default {
 }
 .add-to-cart {
   position: absolute;
+  text-align: center;
   /* right: 30px; */
-  width: 150px;
+  width: 207px;
   padding: 3px;
   font-size: 16px;
   cursor: pointer;
   background-color: cornflowerblue;
-  border-radius: 16px;
+  /* border-radius: 16px; */
 }
 
 td,
@@ -255,8 +256,8 @@ th {
 }
 .preview {
   position: absolute;
-  top: 10px;
-  right: 0;
+  top: 30px;
+  right: -30%;
   width: 210px;
   height: 210px;
   padding: 5px;
