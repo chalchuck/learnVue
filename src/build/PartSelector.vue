@@ -1,7 +1,6 @@
 <template>
   <div class="part" :class="position">
     <!-- <img @click="showPartInfo()" :src="selectedPart.src" title="arm"/> -->
-
     <router-link :to="{
         name: 'Parts',
         params: {
